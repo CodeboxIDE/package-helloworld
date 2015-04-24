@@ -1,0 +1,16 @@
+{
+    "name": "helloworld",
+    "version": "0.0.0",
+    "description": "Simple HelloWorld",
+    "main": "./node/index.js",
+    "browser": "./src/index.js",
+    "engines": {
+        "codebox": ">=1.0.0-alpha"
+    },
+    "dependencies": {
+
+    },
+    "packageDependencies": {
+        "menubar": "CodeboxIDE/package-menubar"
+    }
+}
