@@ -8,7 +8,7 @@ commands.register({
     title: "HelloWorld: Say",
     context: [],
     run: function(args, ctx) {
-        var contentSize = (ctx.editor? xtc.editor.getValue().length : "No Editor");
+        var contentSize = (ctx.editor? ctx.editor.getContent().length : "No Editor");
         return rpc.execute('helloworld/say', { size: contentSize })
         .then(function(msg) {
             return dialogs.alert("RPC Message: "+msg);
